@@ -1,0 +1,59 @@
+Package URL,Specific Package,Known Vulnerability,Version,IS SHARED ,AFFECTED ECOSYSTEMS,COMMENT,,,,,,,Package Name,"Afffected Ecosystem (Not only ours, but all from Snyk)",CVE
+https://github.com/Dav1dde/glad,-,-,-,-,-,,,,,,,,,,
+https://github.com/nayuki/QR-Code-generator,-,-,-,-,-,,,,,,,,,,
+https://github.com/gflags/gflags,-,-,-,-,-,,,,,,,,,,
+https://github.com/google/googletest,-,-,-,-,-,,,,,,,,,,
+https://github.com/redis/hiredis,"redis/hiredis in C
+hiredis in Debian","https://nvd.nist.gov/vuln/detail/CVE-2021-32765
+https://security.snyk.io/vuln?search=CVE-2021-32765",,YES,"Debian, C/C++",No data on BSDs,,,,,,,,,
+https://github.com/nodejs/http-parser,-,-,-,-,-,,,,,,,,,,
+https://github.com/google/brotli,google/brotli in C/C++,https://security.snyk.io/vuln?search=CVE-2020-8927,-,YES,"sles, oracle, C/C++",No data on BSDs,,,,,,,,,
+https://github.com/open-source-parsers/jsoncpp,-,-,-,-,-,,,,,,,,,,
+https://github.com/google/leveldb,-,-,-,-,-,,,,,,,,,,
+https://github.com/Tessil/robin-map,-,-,-,-,-,,,,,,,,,,
+https://github.com/alanxz/rabbitmq-c,alanxz/rabbitmq-c in C/C++,https://security.snyk.io/vuln?search=CVE-2019-18609,-,YES,"C/C++, oracle, centos, ubuntu",No data on BSDs,,,,,,,,,
+https://github.com/Cyan4973/xxHash,-,-,-,-,-,,,,,,,,,,
+https://github.com/jbeder/yaml-cpp,jbeder/yaml-cpp in C/C++,https://security.snyk.io/vuln?search=CVE-2019-6292,-,YES,"C/C++, sles, Cocoapods, debian,ubuntu","No data on BSDs
+Cocoapods is the same package https://cocoapods.org/pods/yaml-cpp",,,,,,,,,
+https://github.com/aws/s2n-tls,-,-,-,-,-,,,,,,,,,,
+https://github.com/oneapi-src/oneTBB,-,-,-,-,-,,,,,,,,,,
+https://github.com/NLnetLabs/routinator,routinator in Cargo,https://security.snyk.io/vuln?search=CVE-2021-43174,-,YES,"Has cargo included, can see also debian, but not info on the BSDs",No data on BSDs,,,,,,,,,
+https://github.com/cisco/libsrtp,libsrtp in Conan,https://security.snyk.io/vuln?search=CVE-2015-6360,-,YES,"C/C++ and centos, ubuntu, oracle, debian, no BSDs info",Oracle is same package: http://213.146.141.13/package/details/AL2/distrodefault/aarch64/libsrtp-devel/1.4.4,,,,,,,,,
+https://github.com/lz4/lz4,lz4 in Conan and VCPKG,https://security.snyk.io/vuln?search=CVE-2021-3520,-,YES,"C/C++, centos, rhel, alphine, oracle, sles, no BSDs info","Centos also is the same package
+https://centos.pkgs.org/7/centos-x86_64/lz4-devel-1.8.3-1.el7.x86_64.rpm.html",,,,,,,,,
+https://github.com/fmtlib/fmt,-,-,-,-,-,,,,,,,,,,
+https://github.com/KhronosGroup/glslang,-,-,-,-,-,,,,,,,,,,
+,,,,,,,,,,,,,,,
+"Interesting(?): Cannot find much on the BSDs vulnerabilities, so we cannot report. But we can say we observe packages present in ecosystems we don't have in the dasea dataset, e.g. the OS stuff + cocoapods, therefore they do potentially spread accross ecosystems? However, we need to address that issue with vulnerabilities info scattered amoung various sources, or not available for the smaller ecosystems (Clojars, BSDs, Alire, etc.)",,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+Table 6,,,,,,,,,,,,,,,
+https://github.com/lodash/lodash,multiple,"https://security.snyk.io/vuln?search=CVE-2021-23337
+https://security.snyk.io/vuln?search=CVE-2020-28500
+",< 4.17.21 (before latest version),YES,"Ubuntu, Debian, npm, Maven, Clojars is not included in Snyk, RubyGems packages somehow the JS package under a different name so it has different source code, but also suffers from the same vulnerability ",,,,,,,,,,
+https://github.com/facebook/react,"react in npm
+react in NuGet",https://security.snyk.io/vuln/?search=CVE-2013-7035,old,YES,"NPM,NuGet, no info on rubygems, but this is a very old vulnerability",,,,,,,,,,
+https://github.com/facebook/immutable-js,-,https://snyk.io/vuln/npm:immutable-js,-,-,-,NO KNOWN VULNE,,,,,,,,,
+https://github.com/electron/electron,electron in npm,https://security.snyk.io/vuln?search=CVE-2022-1638,new,YES,"npm, affects cromium package in multiple ecosystems, no info on FreeBSD",,,,,,,,,,
+https://github.com/ninja-build/ninja,-,https://snyk.io/vuln/unmanaged:ninja,-,-,-,NO KNOWN VULNE,,,,,,,,,
+https://github.com/yeikos/js.merge,-,https://snyk.io/vuln/npm:js-merge,-,-,-,NO KNOWN VULNE,,,,,,,,,
+https://github.com/zenorocha/clipboard.js,-,https://snyk.io/vuln/npm:clipboard.js,-,-,-,NO KNOWN VULNE,,,,,,,,,
+https://github.com/getsentry/raven-js,-,https://snyk.io/vuln/npm:raven-js,-,-,-,NO KNOWN VULNE,,,,,,,,,
+https://github.com/grpc/grpc.git,grpc in npm,https://security.snyk.io/vuln?search=CVE-2020-7768,old,YES,"npm, maven, c/c++, homebrew has no vulnerabilities info
+Why we did not catch grpc in conan/vpkg? URL issue maybe? Name there is grpc too
+Yes, URL issue, conan has link: https://github.com/grpc/grpc
+But we can confirm this package vulnerabilities propagate across NPM and C/C++. Maven we don't have dataset, but we can see potentially there 2
+BTW also vulnerabilities match in versions of the cross-ecosystem packages as well, but not always.",,,,,,,,,,
+https://github.com/ftlabs/fastclick,-,https://snyk.io/vuln/npm:fastclick,-,-,-,NO KNOWN VULNE,,,,,,,,,
+https://github.com/mrdoob/three.js,-,https://snyk.io/vuln/npm:three.js,-,-,-,NO KNOWN VULNE,,,,,,,,,
+https://github.com/bestiejs/platform.js,-,https://snyk.io/vuln/npm:platform.js,-,-,-,HAS 1 but broken link,,,,,,,,,
+https://github.com/bytecodealliance/wasmtime,wasmtime in cargo,https://security.snyk.io/vuln?search=CVE-2022-24791,-,-,"has only in cargo and ubuntu
+can it be that also C/c++ is unmaintained?",,,,,,,,,,
+https://github.com/Stuk/jszip,jszip in npm,https://security.snyk.io/vuln?search=CVE-2021-23413,-,YES,"affects npm and Maven, Clojars no info","https://snyk.io/blog/c-cpp-security-scanning-unmanaged-snyk-open-source/
+Conan + other package managers they say are owrking to add, so put as a sentence for future work",,,,,,,,,
+https://github.com/facebook/watchman,-,https://snyk.io/vuln/npm:bser,-,-,-,NO KNOWN VULNE,,,,,,,,,
+https://github.com/solana-labs/solana-program-library,"cargo, npm",https://security.snyk.io/vuln?search=CVE-2022-31264,-,NO,"Cargo only, although it exists in npm","???, checked all 3
+https://nvd.nist.gov/vuln/search/results?form_type=Basic&results_type=overview&query=solana&queryType=phrase&search_type=all&isCpeNameSearch=false",,,,,,,,,
+https://github.com/ninja-build/ninja/archive/v1.10.2.tar.gz,-,https://snyk.io/vuln/unmanaged:ninja,-,-,-,NO KNOWN VULNE,,,,,,,,,
+https://github.com/reactstrap/reactstrap,-,https://snyk.io/vuln/npm:reactstrap,-,-,-,NO KNOWN VULNE,,,,,,,,,
+https://github.com/cucumber/gherkin3,-,https://snyk.io/vuln/npm:gherkin,-,-,-,NO KNOWN VULNE,,,,,,,,,
+https://github.com/lz4/lz4,lz4 in Conan and VCPKG,https://security.snyk.io/vuln?search=CVE-2021-3520,-,YES,"C/C++, centos, rhel, alphine, oracle, sles, no BSDs info",,,,,,,,,,
